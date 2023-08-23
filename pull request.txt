@@ -1,0 +1,47 @@
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ dir
+3D\ Objects        Downloads              NTUSER.DAT
+AppData            Favorites              NTUSER.DAT{53b39e88-18c4-11ea-a811-000
+Application\ Data  IntelGraphicsProfiles  NTUSER.DAT{53b39e88-18c4-11ea-a811-000
+Contacts           Links                  NTUSER.DAT{53b39e88-18c4-11ea-a811-000
+Cookies            Local\ Settings        NetHood
+Desktop            Music                  OneDrive
+Documents          My\ Documents          Pictures
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ cd Desktop
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop
+$ dir
+New\ Text\ Document.txt  Repos  Work\ -\ Edge.lnk  desktop.ini  git_repos  githu
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop
+$ cd git_repos
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/git_repos
+$ mkdir changes
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/git_repos
+$ dir
+changes
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/git_repos
+$ cd changes
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/git_repos/changes
+$ git init
+Initialized empty Git repository in C:/Users/Sparsh.chawla/Desktop/git_repos/cha
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/git_repos/changes (master)
+$ git pull git@github.com:Sparsh52/training-.git
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 1), reused 7 (delta 1), pack-reused 0
+Unpacking objects: 100% (7/7), 5.62 KiB | 169.00 KiB/s, done.
+From github.com:Sparsh52/training-
+ * branch            HEAD       -> FETCH_HEAD
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/git_repos/changes (master)
+$
