@@ -1,0 +1,27 @@
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ git --version
+git version 2.42.0.windows.1
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ git help config
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ mkdir test
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ cd test
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test
+$ git init
+Initialized empty Git repository in C:/Users/Sparsh.chawla/test/.git/
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ --show-toplevel
+bash: --show-toplevel: command not found
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git rev-parse --show-toplevel
+C:/Users/Sparsh.chawla/test
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$

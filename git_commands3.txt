@@ -1,0 +1,285 @@
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ dir
+3D\ Objects        Downloads              NTUSER.DAT                                                                                    PrintHood     Videos
+AppData            Favorites              NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf                                       Recent        ntuser.dat.LOG1
+Application\ Data  IntelGraphicsProfiles  NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms  Saved\ Games  ntuser.dat.LOG2
+Contacts           Links                  NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms  Searches      ntuser.ini
+Cookies            Local\ Settings        NetHood                                                                                       SendTo        test
+Desktop            Music                  OneDrive                                                                                      Start\ Menu
+Documents          My\ Documents          Pictures                                                                                      Templates
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ cd Desktop
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop
+$ dir
+New\ Text\ Document.txt  Repos  Work\ -\ Edge.lnk  desktop.ini  git\ commands\ 2.txt  git\ commands.txt  githubnewaccount.txt  ssh.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop
+$ cd Repos
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos
+$
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos
+$ dir
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos
+$
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos
+$ mkdir orgdetails
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos
+$ dir
+orgdetails
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos
+$ cd orgdetails
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails
+$ git init
+Initialized empty Git repository in C:/Users/Sparsh.chawla/Desktop/Repos/orgdetails/.git/
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ notepad name.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ notepad employees.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        employees.txt
+        name.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git add .
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git commit -m "yo"
+[master (root-commit) 38c7fc1] yo
+ 2 files changed, 2 insertions(+)
+ create mode 100644 employees.txt
+ create mode 100644 name.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git log
+commit 38c7fc16b4d3d470ee3689ce52b9ca9064009102 (HEAD -> master)
+Author: Sparsh52 <chawlasparsh294@gmail.com>
+Date:   Wed Aug 23 15:06:27 2023 +0530
+
+    yo
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git branch f1
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git branch
+  f1
+* master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git branch f1
+fatal: a branch named 'f1' already exists
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git branch -v
+  f1     38c7fc1 yo
+* master 38c7fc1 yo
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git checkout
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git branch
+  f1
+* master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git checkout f1
+Switched to branch 'f1'
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ notepad address.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git checkout master
+Switched to branch 'master'
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git checkout f1
+Switched to branch 'f1'
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git status
+On branch f1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        address.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git commit -m "f1 branch commit"
+On branch f1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        address.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git status
+On branch f1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        address.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git add .
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git status
+On branch f1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   address.txt
+
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git commit -m "f1 branch merge"
+[f1 ab6345c] f1 branch merge
+ 1 file changed, 1 insertion(+)
+ create mode 100644 address.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git status
+On branch f1
+nothing to commit, working tree clean
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git log
+commit ab6345c74fecc2328f583995cba654c4b5a63928 (HEAD -> f1)
+Author: Sparsh52 <chawlasparsh294@gmail.com>
+Date:   Wed Aug 23 15:16:33 2023 +0530
+
+    f1 branch merge
+
+commit 38c7fc16b4d3d470ee3689ce52b9ca9064009102 (master)
+Author: Sparsh52 <chawlasparsh294@gmail.com>
+Date:   Wed Aug 23 15:06:27 2023 +0530
+
+    yo
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git checkout master
+Switched to branch 'master'
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git checkout f1
+Switched to branch 'f1'
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git merge f1
+Already up to date.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git branch
+* f1
+  master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git checkout master
+Switched to branch 'master'
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git branch
+  f1
+* master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git merge f1
+Updating 38c7fc1..ab6345c
+Fast-forward
+ address.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 address.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git branch
+  f1
+* master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git checkout f1
+Switched to branch 'f1'
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git remote add origin git@github.com:Sparsh52/orgdetails.git
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (f1)
+$ git checkout master
+Switched to branch 'master'
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 571 bytes | 38.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Sparsh52/orgdetails.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git push -u origin f1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'f1' on GitHub by visiting:
+remote:      https://github.com/Sparsh52/orgdetails/pull/new/f1
+remote:
+To github.com:Sparsh52/orgdetails.git
+ * [new branch]      f1 -> f1
+branch 'f1' set up to track 'origin/f1'.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$ ^C
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/Desktop/Repos/orgdetails (master)
+$

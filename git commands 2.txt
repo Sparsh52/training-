@@ -1,0 +1,459 @@
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ pwd
+/c/Users/Sparsh.chawla
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ dir
+3D\ Objects        Downloads              NTUSER.DAT                                                                                    PrintHood     Videos
+AppData            Favorites              NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf                                       Recent        ntuser.dat.LOG1
+Application\ Data  IntelGraphicsProfiles  NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms  Saved\ Games  ntuser.dat.LOG2
+Contacts           Links                  NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms  Searches      ntuser.ini
+Cookies            Local\ Settings        NetHood                                                                                       SendTo        test
+Desktop            Music                  OneDrive                                                                                      Start\ Menu
+Documents          My\ Documents          Pictures                                                                                      Templates
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~
+$ cd test
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ pwd
+/c/Users/Sparsh.chawla/test
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Sparsh.chawla/test/.git/
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        master.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git --list
+unknown option: --list
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git list
+git: 'list' is not a git command. See 'git --help'.
+
+The most similar commands are
+        bisect
+        rev-list
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Users/Sparsh.chawla/AppData/Local/Programs/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Sparsh52
+user.email=chawlasparsh294@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git add .
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   master.txt
+
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git commit -m "This is my first commit"
+[master (root-commit) 6ef3501] This is my first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 master.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git log
+commit 6ef350183dae17cd52936bf882e1395b9f6ef39d (HEAD -> master)
+Author: Sparsh52 <chawlasparsh294@gmail.com>
+Date:   Wed Aug 23 13:20:59 2023 +0530
+
+    This is my first commit
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ touch master1.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ notepad master1.txt
+
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git add .
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   master1.txt
+
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git commit -m "This is my second commit"
+[master 4e1ac0e] This is my second commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 master1.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git log
+commit 4e1ac0e833cc9bfe53ebcc48e956913ad75ee659 (HEAD -> master)
+Author: Sparsh52 <chawlasparsh294@gmail.com>
+Date:   Wed Aug 23 13:32:48 2023 +0530
+
+    This is my second commit
+
+commit 6ef350183dae17cd52936bf882e1395b9f6ef39d
+Author: Sparsh52 <chawlasparsh294@gmail.com>
+Date:   Wed Aug 23 13:20:59 2023 +0530
+
+    This is my first commit
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git remote add origin https://github.com/Sparsh52/test-.git
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git remote -v
+origin  https://github.com/Sparsh52/test-.git (fetch)
+origin  https://github.com/Sparsh52/test-.git (push)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git push origin master
+
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 441 bytes | 88.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Sparsh52/test-/pull/new/master
+remote:
+To https://github.com/Sparsh52/test-.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git branch
+* master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git fetch --all
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 613 bytes | 55.00 KiB/s, done.
+From https://github.com/Sparsh52/test-
+ * [new branch]      main       -> origin/main
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (master)
+$ git checkout main
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git merge master
+fatal: refusing to merge unrelated histories
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git branch
+* main
+  master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git branch master
+fatal: a branch named 'master' already exists
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git checkout
+Your branch is up to date with 'origin/main'.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git remote add origin https://github.com/Sparsh52/test-.git
+error: remote origin already exists.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git remote -v
+origin  https://github.com/Sparsh52/test-.git (fetch)
+origin  https://github.com/Sparsh52/test-.git (push)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git remote add origin https://github.com/Sparsh52/test-.git
+error: remote origin already exists.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git remote -v
+origin  https://github.com/Sparsh52/test-.git (fetch)
+origin  https://github.com/Sparsh52/test-.git (push)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 633 bytes | 211.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Sparsh52/test-.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ dir
+README.md
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ touch master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ notepad master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        master
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git add .
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ pwd
+/c/Users/Sparsh.chawla/test
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git commit -m "My First Commit"
+[main 5015f63] My First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 100.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Sparsh52/test-.git
+   1152574..5015f63  main -> main
+branch 'main' set up to track 'origin/main'.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ ssh-keygen -t rsa -C chawlasparsh294@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Sparsh.chawla/.ssh/id_rsa):
+Created directory '/c/Users/Sparsh.chawla/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Sparsh.chawla/.ssh/id_rsa
+Your public key has been saved in /c/Users/Sparsh.chawla/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:4MTeD4HODnU6prqGXlVtBiPCOrkD+J+XtIWOWLPi2u4 chawlasparsh294@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|  .. . o         |
+|   .....+        |
+|. o   *.o+       |
+|o+   B.=o.       |
+|..o ..O.S        |
+| o. +=o..o       |
+| ..=.B.+  .      |
+|..=.= =          |
+|oBEo .           |
++----[SHA256]-----+
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ ssh -T git@github.com
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi Sparsh52! You've successfully authenticated, but GitHub does not provide shell access.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git clone git@github.com:Sparsh52/SecondRepo.git
+Cloning into 'SecondRepo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ ls -ltr
+total 2
+-rw-r--r-- 1 sparsh.chawla 1049089 35 Aug 23 13:48 README.md
+-rw-r--r-- 1 sparsh.chawla 1049089 20 Aug 23 14:06 master
+drwxr-xr-x 1 sparsh.chawla 1049089  0 Aug 23 14:30 SecondRepo/
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git branch
+* main
+  master
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git branch -d master
+warning: deleting branch 'master' that has been merged to
+         'refs/remotes/origin/master', but not yet merged to HEAD.
+Deleted branch master (was 4e1ac0e).
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ git branch
+* main
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ ls -ltr
+total 2
+-rw-r--r-- 1 sparsh.chawla 1049089 35 Aug 23 13:48 README.md
+-rw-r--r-- 1 sparsh.chawla 1049089 20 Aug 23 14:06 master
+drwxr-xr-x 1 sparsh.chawla 1049089  0 Aug 23 14:30 SecondRepo/
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test (main)
+$ cd SecondRepo
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$ dir
+README.md
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$ ls --ltr
+ls: unknown option -- ltr
+Try 'ls --help' for more information.
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$ ls -ltr
+total 1
+-rw-r--r-- 1 sparsh.chawla 1049089 33 Aug 23 14:30 README.md
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$ notepad second.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        second.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$ git add .
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$ git commit -m "Second Repo first commit"
+[main 8a203f7] Second Repo first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 second.txt
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$ git remote -v
+origin  git@github.com:Sparsh52/SecondRepo.git (fetch)
+origin  git@github.com:Sparsh52/SecondRepo.git (push)
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 312 bytes | 78.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Sparsh52/SecondRepo.git
+   cf924b3..8a203f7  main -> main
+
+sparsh.chawla@HVTNDAL0810 MINGW64 ~/test/SecondRepo (main)
+$
